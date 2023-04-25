@@ -1,5 +1,5 @@
 const { read } = require("./read");
-const { write } = require("./writejson");
+const { write } = require("./writeJSON");
 
 function create(titulo, descripcion) {
   const data = read();

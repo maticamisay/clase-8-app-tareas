@@ -1,5 +1,6 @@
 const { read } = require("./crud/read");
 const { create } = require("./crud/create");
+const { update, update2 } = require("./crud/update");
 
 const data = process.argv;
 
@@ -10,6 +11,10 @@ const comand = (comando, param1, param2) => {
       break;
     case "create":
       create(param1, param2);
+      break;
+    case "update":
+      // update(param1, param2)
+      update2(param1, param2);
       break;
     case "delete":
       //  funcion para borrar una tarea

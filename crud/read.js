@@ -1,7 +1,7 @@
 const fs = require("fs");
+const data = fs.readFileSync("./data.json", "utf8");
 
 function read() {
-  const data = fs.readFileSync("./data.json", "utf8");
   const dataParsed = JSON.parse(data);
   return dataParsed;
 }
