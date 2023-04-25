@@ -17,7 +17,6 @@ const update2 = (tituloBuscar, nuevaDescripcion) => {
   const data = read();
   const arrayEditado = data.filter((tarea) => tarea.titulo != tituloBuscar);
   arrayEditado.push({ titulo: tituloBuscar, descripcion: nuevaDescripcion });
-
   write(arrayEditado);
   return console.log("Actualizado con exito");
 };
