@@ -2,6 +2,8 @@ const { read } = require("./crud/read");
 const { create } = require("./crud/create");
 const { update, update2 } = require("./crud/update");
 const { deleteTitle } = require("./crud/delete");
+const { find } = require("./crud/find");
+const { list } = require("./crud/list");
 
 const data = process.argv;
 
@@ -19,6 +21,12 @@ const comand = (comando, param1, param2) => {
       break;
     case "delete":
       deleteTitle(param1);
+      break;
+    case "find":
+      console.log(find(param1));
+      break;
+    case "list":
+      console.log(list());
       break;
     default:
       console.log("no se encontró ningun comando que coincida");

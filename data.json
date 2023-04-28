@@ -1,6 +1,5 @@
 [
   { "titulo": "sacar la basura", "descripcion": "en la mañana" },
   { "titulo": "estudiar programacion", "descripcion": "los viernes?" },
-  { "titulo": "hacer tp2", "descripcion": "para dos semanas" },
   { "titulo": "estudiar matematicas", "descripcion": "para el viernes" }
 ]
